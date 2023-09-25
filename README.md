@@ -1,2 +1,2 @@
-# LesGauloi
+# LesGaulois
 rgiuhqergurth
