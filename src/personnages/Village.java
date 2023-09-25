@@ -1,12 +1,15 @@
 package personnages;
-
+/*s*/
 public class Village {
-	private String nom;
-	
-	public Village(String nom) {
-		this.nom = nom;
-	}
-	public String getNom(){
-		return nom ;
-		}
+    private String nom;
+    private Chef chef;
+    public Village(String nom) {
+         this.nom = nom;
+    }
+    public void setChef(Chef chef) {
+         this.chef = chef;
+    }
+    public String getNom() {
+         return nom;
+   }
 }
