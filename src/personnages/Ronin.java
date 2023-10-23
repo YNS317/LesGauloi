@@ -3,7 +3,7 @@ package personnages;
 public class Ronin extends Humain {
 
 	private int honneur = 1;
-	private int force;
+	private int force = 2 * honneur;
 	
 	public Ronin(String nom, String boissonFavorite, int argent, int force) {
 		super(nom, boissonFavorite, argent);
@@ -24,7 +24,10 @@ public class Ronin extends Humain {
 		this.parler("Je t'ai retrouvé vermine, tu vas payer pour ce que tu as fait à ce pauvre marchand !");
 		
 		if(this.force >= adversaire.getReputation()) {
+			this.honneur++;
+			int argent=this.getArgent();
 			this.parler("Je t’ai eu petit yakusa !");
+			this.gagnerArgent(argent);
 			adversaire.perdre();
 		}
 		else {
