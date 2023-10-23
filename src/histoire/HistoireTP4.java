@@ -36,6 +36,7 @@ public class HistoireTP4 {
 		
 		roro.donner(marco);
 		
+		roro.provoquer(yakulenoir);
 
 	}
 
