@@ -33,14 +33,14 @@ public class Humain {
 	}
 	
 	public void boire() {
-		System.out.println("(" + this.getNom() + ") -" + "Mmmm, un bon verre de" + this.getBoisson() + " ! Gloups ! " );
+		System.out.println("(" + this.getNom() + ") -" + " Mmmm, un bon verre de " + this.getBoisson() + " ! Gloups ! " );
 	}
 	
-	public void gagnerArgent(int gain) {
+	protected void gagnerArgent(int gain) {
 		this.argent += gain;
 	}
 	
-	public void perdreArgent(int perdre) {
+	protected void perdreArgent(int perdre) {
 		this.argent -= perdre;
 	}
 	
