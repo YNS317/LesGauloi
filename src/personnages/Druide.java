@@ -51,4 +51,5 @@ public class Druide {
 		if(gaulois.getNom().equals("Obélix")) this.parler("Non, Obélix !... Tu n’auras pas de potion magique !");
 		else gaulois.boirePotion(this.forcePotion);
 	}
+    
 }
